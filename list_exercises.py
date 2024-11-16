@@ -16,6 +16,21 @@ print('The list of integer after update :')
 for x in L1:
     print(x)
 
+#read list values from the keyboard
+#returns the list
+def get_list(n:int)->list:
+    l=[]
+    #for i in range(n):
+    for _ in range(n):
+        x=int(input('Enter an integer :'))
+        l.append(x)
+    return l
+
+#call the function
+n=int(input('n= '))
+l=get_list(n)
+print(l)
+
 def square_list(n:int)->list:
     L=[]
     for i in range(1,n+1):
